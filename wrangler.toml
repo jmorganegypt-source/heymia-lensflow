@@ -1,0 +1,28 @@
+name = "heymia"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+
+[ai]
+binding = "AI"
+
+[vars]
+PUBLIC_DOMAIN = "https://heymia.lensflow.au"
+GEMINI_MODEL = "gemini-3.8-flash"
+
+# Secrets (do not put values here):
+#   wrangler secret put GEMINI_API_KEY
+#   wrangler secret put STRIPE_SECRET_KEY
+#   wrangler secret put LIVEAVATAR_API_KEY
+#   wrangler secret put ELEVENLABS_API_KEY
+#
+# Bindings — set IDs in the dashboard or uncomment after create:
+#   wrangler kv namespace create MEMORY
+#   wrangler r2 bucket create heymia-vault
+#
+# [[kv_namespaces]]
+# binding = "MEMORY"
+# id = "your-kv-namespace-id"
+#
+# [[r2_buckets]]
+# binding = "VAULT"
+# bucket_name = "heymia-vault"
